@@ -15,7 +15,7 @@ function Schedule() {
   //   This useEffect is used to get the schedule of the user
   useEffect(() => {
     const hrs = location.state.data;
-    const url = `http://localhost:5000/schedule?hrs=${hrs}`;
+    const url = `https://zaio-ls9s.onrender.com/schedule?hrs=${hrs}`;
     get({ url });
   }, [location.state.data]);
 
