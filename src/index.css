@@ -1,6 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: grey;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 100vh;
+  }
+}
 
 body {
   background-color: rgb(36, 36, 36);
@@ -16,4 +32,31 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* style scrollbar of the bod */
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 20px;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: rgb(81, 81, 81);
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 100vh;
+}
+
+.fc-scroller::-webkit-scrollbar {
+  width: 8px;
+  height: 20px;
+}
+.fc-scroller::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: rgb(32, 32, 32);
+}
+.fc-scroller::-webkit-scrollbar-thumb {
+  background: rgb(116, 116, 116) ;
+  border-radius: 100vh;
 }
